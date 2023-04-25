@@ -3,4 +3,28 @@ body{
 }
 h2{
     color: brown;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    padding:10px 10px;
+    margin:5px 5px;
+}
+.description{
+    align: center;
+    box-sizing:border-box;
+width: 300px;
+height:120px;
+border:none;
+margin-left: 200px;
+background-color: brown;
+}
+span{
+    font-weight: bold;
+    color:skyblue;
+    font-size:larger;
+}
+#frown-img{
+    width: 200px;
+     height:200px;
+     
 }
