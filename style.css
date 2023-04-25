@@ -81,7 +81,7 @@ span{
 #left{
     float:left;
     width:30%;
-    height: 200px;
+    height: 520px;
     border:2px;
     margin-left:80px;
     margin-top:200px;
@@ -90,8 +90,8 @@ span{
 #right{
     float:right;
     width:40%;
-    height: 520px;
-    border:1px;
+    height: 600px;
+    border:1px solid black;
     margin-right: 150px;
     margin-top: 50px;
 }
@@ -146,4 +146,11 @@ textarea{
     height: 50px;
     width:99%;
     margin:0;
+}
+#main3{
+    border-top: 150px;
+}
+#details-form{
+    margin-top: 70px;
+
 }
