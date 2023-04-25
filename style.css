@@ -26,7 +26,6 @@ span{
     font-weight: bold;
     color:skyblue;
     font-size:larger;
-
 }
 #frown-img{
     width: 200px;
@@ -72,8 +71,8 @@ span{
 #right{
     float:right;
     width:40%;
-    height: 650px;
-    border:1px solid black;
+    height: 520px;
+    border:1px;
     margin-right: 150px;
     margin-top: 50px;
 }
@@ -112,4 +111,20 @@ background:transparent;
 border:none;
 color:grey;
 font-size:30px;
+position:absolute;
+}
+i:hover{
+    cursor:pointer;
+}
+#comment-section{
+    background-color:white;
+    width:100%;
+    height:80px;
+    margin:5px;
+    margin-left: 0;
+}
+textarea{
+    height: 50px;
+    width:99%;
+    margin:0;
 }
