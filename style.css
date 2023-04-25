@@ -5,10 +5,30 @@ h1{
     color: brown;
     font-weight:bold;
     font-family:Arial, Helvetica, sans-serif;
-    background-color:beige;
+    background-color:rgb(227,188,154);
     padding:10px 10px;
     margin:5px 5px;
    
+}
+nav{
+    margin: 10px;
+  text-align:center; 
+  padding:5px 5px;
+}
+.nav-button{
+    border-radius: 15px;
+    background-color:#008080;
+    color:black;
+    border:5px;
+}
+button:hover{
+    color:red;
+}
+button:visited{
+    color:blueviolet;
+}
+button:active{
+    color:green;
 }
 .parent-description{
     text-align: center;
@@ -19,12 +39,10 @@ height:120px;
 border:none;
 margin-left: 200px;
 }
-.child-description{
 
-}
 span{
     font-weight: bold;
-    color:skyblue;
+    color:maroon;
     font-size:larger;
 }
 #frown-img{
@@ -34,7 +52,7 @@ span{
 }
 .parent-solutions{
     padding:1px 1px;
-    background-color:white;
+    background-color: rgb(227,188,154);
     font-family: Arial, Helvetica, sans-serif;
     margin-top:50px;
     
@@ -82,9 +100,9 @@ span{
     background-color: brown;
 }
 #meme-title{
-    font-weight: bold;
-    font-size:large ;
-    color:aqua;
+    font-weight:bolder;
+    font-size:30px;
+    color:solid black;
 }
 #meme-button{
     border-radius: 3rem;
