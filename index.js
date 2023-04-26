@@ -8,13 +8,12 @@ function handleClick(){
         like_button.style.color="grey"
     }
 }
-/*function getMemeData(){
-    fetch("http://alpha-meme-maker.herokuapp.com")
+function getMemeData(){
+    fetch("https://meme-api.com/gimme")
     .then(res=>res.json())
     .then(data=>replaceWithData(data))
 }
 function replaceWithData(data){
-    meme_holder.src=data.url
-
+    meme_holder.setAttribute("src",data.url)
 }
-getMemeData()*/
+getMemeData()
