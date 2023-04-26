@@ -8,7 +8,7 @@ function handleClick(){
         like_button.style.color="grey"
     }
 }
-function getMemeData(){
+/*function getMemeData(){
     fetch("http://alpha-meme-maker.herokuapp.com")
     .then(res=>res.json())
     .then(data=>replaceWithData(data))
@@ -17,4 +17,4 @@ function replaceWithData(data){
     meme_holder.src=data.url
 
 }
-getMemeData()
+getMemeData()*/
