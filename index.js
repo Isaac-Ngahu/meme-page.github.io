@@ -6,6 +6,7 @@ const author_name=document.getElementById("author-name")
 const meme_button=document.getElementById("meme-button")
 const detailsForm=document.getElementById("details-form")
 const userComment=document.getElementById("post_comment")
+const userComments=document.getElementById("userComments")
 const api_url="https://meme-api.com/gimme/30"
 function getMemeData(){
     fetch(api_url)
@@ -50,7 +51,7 @@ function handleOnKeyDown(e){
 window.location.assign("#main2")
     }
 }
-function handleSubmit(e){
+function handleSubmitDetails(e){
     e.preventDefault();
     let reviewObject={
         name:e.target.user_name.value,
@@ -60,8 +61,16 @@ function handleSubmit(e){
 postUserInfo(reviewObject)
 detailsForm.reset()
 }
+function handleSubmitComment(e){
+    e,preventDefault();
+    const userComment=e.target.post_comment.value;
+    document.createElement("li");
+    userComments.appendChild(userComment);
+    userComment.reset()
+}
 getMemeData()
 like_button.addEventListener("click",handleClick)
 meme_button.addEventListener("click",getMemeData)
 //document.addEventListener("onkeydown",handleOnKeyDown)
-detailsForm.addEventListener("submit",handleSubmit)
+detailsForm.addEventListener("submit",handleSubmitDetails)
+userComment.addEventListener("submit",handleSubmitComment)
