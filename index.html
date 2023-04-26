@@ -42,7 +42,7 @@
             <input name="email" type="input"id="user_email" placeholder="JohnDoe@gmail.com"  class="email" ></p>
             <p><label name="review" class="review">Leave your review below</label>
             <textarea placeholder="how can we make the website better"id="user_review" name="review"></textarea></p>
-          <button type="submit" name="review" class="button">submit review</button>
+          <button type="submit" name="review" class="submit-button">submit review</button>
         </form>
 </div>
 <div id="right" class="top">
@@ -57,18 +57,14 @@
 </div>
 <div id="comment-section">
   <form id="user_comment">
-   <textarea placeholder="leave your comments here"name="submit comment"></textarea> 
-   <button type="submit" name="submit comment"id="post_comment"class="button">Post comment</button>
-   <ul>
+   <textarea placeholder="leave your comments here"id="post_comment" name="submit-comment"></textarea> 
+   <button type="submit" name="submit-comment"class="submit-button">Post comment</button></form>
+   <ul id="addUserComments">
    <li id="author-name"> Author name goes here</li>
-<ul id="userComments"></ul>
+   <li id="subreddit"></li>
   </ul>
 </div>
 </div>
-<div>
-  
-</div>
-  </section>
  
 <script src="index.js"></script>
 </body>

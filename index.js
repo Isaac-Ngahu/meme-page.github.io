@@ -6,13 +6,16 @@ const author_name=document.getElementById("author-name")
 const meme_button=document.getElementById("meme-button")
 const detailsForm=document.getElementById("details-form")
 const userComment=document.getElementById("post_comment")
-const userComments=document.getElementById("userComments")
+const user_comment=document.getElementById("user_comment")
+const addUserComments=document.getElementById("addUserComments")
+
+
 const api_url="https://meme-api.com/gimme/30"
 function getMemeData(){
     fetch(api_url)
     .then(res=>res.json())
     .then(data=>replaceWithData(data))
-    .catch(error=>{
+   .catch(error=>{
         alert("oops looks like there was an error");
         console.log(error)
     })
@@ -61,16 +64,20 @@ function handleSubmitDetails(e){
 postUserInfo(reviewObject)
 detailsForm.reset()
 }
-function handleSubmitComment(e){
-    e,preventDefault();
-    const userComment=e.target.post_comment.value;
-    document.createElement("li");
-    userComments.appendChild(userComment);
-    userComment.reset()
+function appendComment(e){
+    const Li=document.createElement("li");
+ Li.innerText=e.target.post_comment.value;
+ addUserComments.appendChild(Li);
+    user_comment.reset()
 }
+function handleSubmitComment(e){
+    e.preventDefault();
+    appendComment(e);
+    return;
+    }
 getMemeData()
 like_button.addEventListener("click",handleClick)
 meme_button.addEventListener("click",getMemeData)
 //document.addEventListener("onkeydown",handleOnKeyDown)
 detailsForm.addEventListener("submit",handleSubmitDetails)
-userComment.addEventListener("submit",handleSubmitComment)
+user_comment.addEventListener("submit",handleSubmitComment)

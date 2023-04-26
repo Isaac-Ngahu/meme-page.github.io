@@ -110,10 +110,10 @@ span{
 #right{
     float:right;
     width:40%;
-    height: 600px;
+    height: 700px;
     border:1px solid black;
     margin-right: 150px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 #top-div{
     width:100%;
@@ -188,7 +188,7 @@ button[type="submit"]{
     border-radius: 3rem;
     color:white;
 }
-button[type="submit"]:hover{
+.submit-button:hover{
     padding:0;
 }
 
