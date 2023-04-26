@@ -33,15 +33,15 @@
 <form id="details-form">
     <p>Here's a survey for your feedback:</p>
     <p><label name="memer">Name:</label>
-    <input name="memer" type="input" placeholder="Enter your name"></p>
+    <input name="memer" type="input" id="user_name" placeholder="Enter your name"></p>
     <input type="radio" name="gender" class="gender">
         <label name="gender" class="gender">Male</label>
         <input type="radio" name="gender"class="gender">
             <label name="gender"class="gender">Female</label>
            <p><label name="email" class="email">Email address:</label>
-            <input name="email" type="input" placeholder="JohnDoe@gmail.com"  class="email" ></p>
+            <input name="email" type="input"id="user_email" placeholder="JohnDoe@gmail.com"  class="email" ></p>
             <p><label name="review" class="review">Leave your review below</label>
-            <textarea placeholder="how can we make the website better" name="review"></textarea></p>
+            <textarea placeholder="how can we make the website better"id="user_review" name="review"></textarea></p>
           <button type="submit" name="review" class="button">submit review</button>
         </form>
 </div>
@@ -56,9 +56,9 @@
     <button type="button" name="comment" id="like-button"><i class="fa-solid fa-heart"></i></i>like this meme</button>
 </div>
 <div id="comment-section">
-  <form>
+  <form id="user_comment">
    <textarea placeholder="leave your comments here"name="submit comment"></textarea> 
-   <button type="submit" name="submit comment"  class="button">Submit comment</button>
+   <button type="submit" name="submit comment"id="post_comment"class="button">Post comment</button>
    <ul>
    <li id="author-name"> Author name goes here</li>
 <li id="subreddit"></li>
