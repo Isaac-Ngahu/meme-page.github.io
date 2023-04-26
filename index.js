@@ -8,9 +8,8 @@ const detailsForm=document.getElementById("details-form")
 const userComment=document.getElementById("post_comment")
 const user_comment=document.getElementById("user_comment")
 const addUserComments=document.getElementById("addUserComments")
-
-
 const api_url="https://meme-api.com/gimme/30"
+//fetching meme data
 function getMemeData(){
     fetch(api_url)
     .then(res=>res.json())
@@ -20,6 +19,7 @@ function getMemeData(){
         console.log(error)
     })
 }
+//post reviews 
 function postUserInfo(reviews){
 fetch(api_url,{
     method:"POST",
@@ -31,6 +31,7 @@ body:JSON.stringify(reviews)
 .then(res=>res.json())
 .then(data=>console.log(data))
 }
+//change like button color
 function handleClick(){
     if(like_button.style.color==="grey"){
         like_button.style.color="red"
@@ -38,7 +39,7 @@ function handleClick(){
         like_button.style.color="grey"
     }
 }
-
+//populate with data
 function replaceWithData(data){
     like_button.style.color="grey"
    data.memes.forEach(element => {
@@ -49,6 +50,7 @@ subreddit.innerHTML=`The subreddit is<u>${element.subreddit}</u>`
 
    });
 }
+// handling events
 function handleOnKeyDown(e){
     if(e==="onkeydown"){
 window.location.assign("#main2")
@@ -87,6 +89,7 @@ if(e.key==="ArrowDown"){
 }
 
     }
+    //calling functions
 getMemeData()
 like_button.addEventListener("click",handleClick)
 meme_button.addEventListener("click",getMemeData)

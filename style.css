@@ -1,5 +1,6 @@
 body{
     background-color: bisque;
+    overflow-x: hidden;
 }
 @keyframes changeColor {
      0%   {background-color: red;}
@@ -191,5 +192,6 @@ button[type="submit"]{
 .submit-button:hover{
     padding:0;
 }
+
 
 
