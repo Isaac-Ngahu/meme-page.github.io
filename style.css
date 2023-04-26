@@ -36,14 +36,14 @@ nav{
     margin: 10px;
     width:150px;
 }
-.nav-button:hover{
+.button:hover{
     color:hotpink;
 padding:15px 30px;
 }
-button:visited{
+.button:visited{
     color:blueviolet;
 }
-button:active{
+.button:active{
     color:red;
 }
 .parent-description{
@@ -100,7 +100,7 @@ span{
 }
 #left{
     float:left;
-    width:30%;
+    width:35%;
     height: 520px;
     border:2px;
     margin-left:80px;
@@ -183,4 +183,13 @@ input{
     padding: 10px 10px;
     border-radius: 2rem;
 }
+button[type="submit"]{
+    background-color: maroon;
+    border-radius: 3rem;
+    color:white;
+}
+button[type="submit"]:hover{
+    padding:0;
+}
+
 
