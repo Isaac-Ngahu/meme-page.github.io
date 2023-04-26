@@ -10,7 +10,7 @@
 </head>
 <body>
   <h1>Welcome to the core of happiness</h1> 
-  <nav> <button type="button" class="nav-button"><a href="#main1">Description page</a></button ><button class="nav-button"><a href="#main2"> Go to the memes</a></button><button class="nav-button"><a href="#main3">Fill the form</a></button></nav>
+  <nav> <button type="button" class="nav-button"><a href="#main1">Description page</a></button ><button class="nav-button"><a href="#main2"> Go to the memes</a></button></nav>
   <section id="main1"> 
   <div  id="top" class="parent-description">
     <p class="child-description">For this particular page our main focus is:<span> turning that frown upside down</span></p>
@@ -18,7 +18,7 @@
   </div>
   
   <div id="bottom" class="parent-solutions" >
-    <p class="parent-solutions"></p>You don't need a reason to look at memes<span>but here are some just in case</span></span></p>
+    <p class="parent-solutions">You don't need a reason to look at memes<span>but here are some just in case</span></span></p>
 <ul>
     <li class="child-solutions">Had a bad day at work?</li>
     <li class="child-solutions">Haven't had a good laugh in a while?</li>
@@ -32,19 +32,20 @@
 <button type="button" id="meme-button" name="generate meme">Generate meme</button>
 <form id="details-form">
     <p>Here's a survey for your feedback:</p>
-    <label name="memer">Name:</label>
-    <input name="memer" type="input" placeholder="Enter your name"><br>
+    <p><label name="memer">Name:</label>
+    <input name="memer" type="input" placeholder="Enter your name"></p>
     <input type="radio" name="gender" class="gender">
-        <label name="gender" class="gender">Male</label><br>
+        <label name="gender" class="gender">Male</label>
         <input type="radio" name="gender"class="gender">
-            <label name="gender"class="gender">Female</label><br>
-            <label name="email" class="email">Email address:</label>
-            <input name="email" type="input" placeholder="JohnDoe@gmail.com"  class="email" >
-            <label name="review" class="review"
+            <label name="gender"class="gender">Female</label>
+           <p><label name="email" class="email">Email address:</label>
+            <input name="email" type="input" placeholder="JohnDoe@gmail.com"  class="email" ></p>
+            <p><label name="review" class="review">Leave your review below</label>
+            <textarea placeholder="Write the review here"></textarea></p>
         </form>
 </div>
-<div id="right">
-   <div id="top-div">
+<div id="right" class="top">
+   <div id="top-div" class="top">
     <p id="meme-title">Title goes here</p>
    </div>
    <div >
@@ -62,10 +63,7 @@
   
 </div>
   </section>
-  <footer id="main3">
-    
-  </footer>
-
+ 
 <script src="index.js"></script>
 </body>
 </html>

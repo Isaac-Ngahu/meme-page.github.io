@@ -1,6 +1,18 @@
 body{
     background-color: bisque;
 }
+@keyframes changeColor {
+     0%   {background-color: red;}
+     25%  {background-color: yellow;}
+     50%  {background-color:hotpink;}
+     100% {background-color: green;}
+}
+@keyframes rotate {
+    0% {rotate: 45deg;}
+    25% {rotate: 90deg;}
+    50% {rotate:135deg;}
+    100% {rotate:180deg;}
+}
 h1{
     color: brown;
     font-weight:bold;
@@ -8,7 +20,8 @@ h1{
     background-color:rgb(227,188,154);
     padding:10px 10px;
     margin:5px 5px;
-   transition:background-color 2s ease-out 100ms;
+   animation:changeColor;
+   animation-duration: 10s;
 }
 nav{
    
@@ -21,15 +34,17 @@ nav{
     border:none;
     padding:15px 32px;
     margin: 10px;
+    width:150px;
 }
 button:hover{
-    color:red;
+    color:hotpink;
+width:200px;
 }
 button:visited{
     color:blueviolet;
 }
 button:active{
-    color:green;
+    color:red;
 }
 .parent-description{
     text-align: center;
@@ -49,7 +64,9 @@ span{
 #frown-img{
     width: 200px;
      height:200px;
-    
+    margin-left:100px;
+    animation:rotate;
+    animation-duration: 10s;
 }
 .parent-solutions{
     padding:1px 1px;
@@ -154,3 +171,10 @@ textarea{
     margin-top: 70px;
 
 }
+input{
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 10px 10px;
+    border-radius: 2rem;
+}
+
