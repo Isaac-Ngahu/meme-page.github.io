@@ -66,13 +66,13 @@ detailsForm.reset()
 }
 function appendComment(e){
     const Li=document.createElement("li");
- Li.innerText=e.target.post_comment.value;
- if(typeOfLi.innerText==="string"){
-   
-     addUserComments.appendChild(Li);
-    user_comment.reset()
+ const value=e.target.post_comment.value;
+ if(value===""){
+    alert("blank comment")  
  }else{
-    alert("blank comment")
+    Li.innerText=value;
+    addUserComments.appendChild(Li);
+    user_comment.reset()
  }
 
 }

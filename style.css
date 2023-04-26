@@ -111,7 +111,7 @@ span{
     float:right;
     width:40%;
     height: 700px;
-    border:1px solid black;
+    
     margin-right: 150px;
     margin-top: 20px;
 }
@@ -122,8 +122,8 @@ span{
 }
 #meme-title{
     font-weight:bolder;
-    font-size:15px;
-    color:solid white;
+    font-size:20px;;
+    color: white;
 }
 #meme-button{
     border-radius: 3rem;
