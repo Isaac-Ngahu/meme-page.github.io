@@ -38,7 +38,7 @@ function handleClick(){
         like_button.style.color="grey"
     }
 }
-//function append
+
 function replaceWithData(data){
     like_button.style.color="grey"
    data.memes.forEach(element => {
@@ -67,17 +67,29 @@ detailsForm.reset()
 function appendComment(e){
     const Li=document.createElement("li");
  Li.innerText=e.target.post_comment.value;
- addUserComments.appendChild(Li);
+ if(typeOfLi.innerText==="string"){
+   
+     addUserComments.appendChild(Li);
     user_comment.reset()
+ }else{
+    alert("blank comment")
+ }
+
 }
 function handleSubmitComment(e){
     e.preventDefault();
     appendComment(e);
     return;
     }
+    function handleOnKeyDown(e){
+if(e.key==="ArrowDown"){
+    window.location.href="#main2"
+}
+
+    }
 getMemeData()
 like_button.addEventListener("click",handleClick)
 meme_button.addEventListener("click",getMemeData)
-//document.addEventListener("onkeydown",handleOnKeyDown)
 detailsForm.addEventListener("submit",handleSubmitDetails)
 user_comment.addEventListener("submit",handleSubmitComment)
+document.addEventListener("keydown",handleOnKeyDown)
