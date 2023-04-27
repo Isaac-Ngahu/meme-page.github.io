@@ -45,8 +45,8 @@ function replaceWithData(data){
    data.memes.forEach(element => {
      meme_title.innerText=`The title is:${element.title}`;
     meme_holder.src=element.url;
-    author_name.innerHTML=` The author is:<u>${element.author}</u>`;
-subreddit.innerHTML=`The subreddit is<u>${element.subreddit}</u>`
+    author_name.innerHTML=` The author is: <u>${element.author}</u>`;
+subreddit.innerHTML=`The subreddit is: <u>${element.subreddit}</u>`
 });
 }
 // handling events
@@ -90,7 +90,7 @@ if(e.key==="ArrowDown"){
 }
 
     }
-    //calling functions
+    //calling functions and adding event listeners
 getMemeData()
 like_button.addEventListener("click",handleClick)
 meme_button.addEventListener("click",getMemeData)
