@@ -31,12 +31,7 @@ body{
     color:hotpink;
 padding:15px 30px;
 }
-.button:visited{
-    color:blueviolet;
-}
-.button:active{
-    color:red;
-}
+
 .parent-description{
     text-align: center;
     display:flex;
