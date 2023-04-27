@@ -47,8 +47,7 @@ function replaceWithData(data){
     meme_holder.src=element.url;
     author_name.innerHTML=` The author is:<u>${element.author}</u>`;
 subreddit.innerHTML=`The subreddit is<u>${element.subreddit}</u>`
-
-   });
+});
 }
 // handling events
 function handleOnKeyDown(e){
@@ -86,6 +85,8 @@ function handleSubmitComment(e){
     function handleOnKeyDown(e){
 if(e.key==="ArrowDown"){
     window.location.href="#main2"
+}else if(e.key==="ArrowUp"){
+    window.location.href="#heading1"
 }
 
     }
